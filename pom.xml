@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>com.galaxy.job.schedule</name>
-	<description>Service job schedule to excute every time to calculate the next years.</description>
+	<description>Service job schedule to execute every time to calculate the next years.</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -29,7 +29,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-quartz</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
