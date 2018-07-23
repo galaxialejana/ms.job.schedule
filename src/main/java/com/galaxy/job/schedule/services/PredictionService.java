@@ -36,7 +36,7 @@ public class PredictionService implements IPredictionService {
 	@Override
 	public void prediceWeather() {
 		logger.info("Job execution...calculate weather prediction");
-		//predictionRepository.weatherPrediction(startDay, endDay);
+		predictionRepository.weatherPrediction(startDay, endDay);
 		startDay += endDay + 1;
 		endDay = startDay + configRange; 
 		
